@@ -1,5 +1,3 @@
-# ffmpeg-cheatsheet
-A concise collection of commonly used FFmpeg commands and tips for video, audio, and media processing tasks.
 
 ## کامند برای فشرده کردن ویدیوها
 این کامند مناسب فشرده کردن و ارسال داخل تلگرام است. اگه تو پخش کردنش با پلیرهای ویندوز به مشکل خوردید جلوتر گفته میشه چه کنید. اما این روش **بیشترین کاهش حجم** را دارد.
