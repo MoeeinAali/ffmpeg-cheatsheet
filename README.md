@@ -116,3 +116,10 @@ ffmpeg -i input.webm -r 15 -vf "scale=-2:720" -c:v libx264 -crf 28 -c:a aac -map
 
 انکودینگ و متادیتاها را به هیچ عنوان تغییر ندهید. چون Spotplayer فقط همین تنظیمات را قبول میکند.
 می توانید مواردی مثل بیت‌ریت را تغییر دهید، اما انکودینگ و فرمت ها را تغییر ندهید.
+
+## تغییر ابعاد یک ویدیو
+
+اگر بخواهیم ابعاد یک ویدیو را دقیقا برابر و یکسان با یک ویدیو دیگر کنیم، از این دستور استفاده میکنیم:
+```
+ffmpeg -i input_video.mp4 -i reference_video.mp4 -filter_complex "[0:v][1:v]scale2ref=iw:ih[vid1][vid2];[vid1][vid2]overlay=0:0" -c:a copy output_video.mp4
+```
